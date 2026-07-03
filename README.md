@@ -5,7 +5,7 @@ Human-Centered AI for Requirements Engineering), co-located with **IEEE RE 2026*
 
 **Authors:**
 - Awaiz Ahmed — Al Ain University, United Arab Emirates — 202310183@aau.ac.ae
-- Mohammed Umar — Al Ain University, United Arab Emirates — 202240077@aau.ac.ae
+- Mohammad Umar — Al Ain University, United Arab Emirates — 202240077@aau.ac.ae
 
 **Repository:** https://github.com/4waiz/hcare2026_awaiz
 
