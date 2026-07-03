@@ -1,0 +1,146 @@
+{
+  "seed_heuristic": {
+    "accuracy": 0.5727272727272728,
+    "macro_precision": 0.5861904761904762,
+    "macro_recall": 0.6849137931034484,
+    "macro_f1": 0.49929029304029304,
+    "per_class": [
+      {
+        "label": "clean",
+        "precision": 0.7333333333333333,
+        "recall": 0.55,
+        "f1": 0.6285714285714286,
+        "support": 40,
+        "tp": 22,
+        "fp": 8,
+        "fn": 18
+      },
+      {
+        "label": "ambiguity",
+        "precision": 0.5714285714285714,
+        "recall": 0.6896551724137931,
+        "f1": 0.625,
+        "support": 29,
+        "tp": 20,
+        "fp": 15,
+        "fn": 9
+      },
+      {
+        "label": "non_testability",
+        "precision": 0.04,
+        "recall": 1.0,
+        "f1": 0.07692307692307693,
+        "support": 1,
+        "tp": 1,
+        "fp": 24,
+        "fn": 0
+      },
+      {
+        "label": "incompleteness",
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 40,
+        "tp": 20,
+        "fp": 0,
+        "fn": 20
+      }
+    ]
+  },
+  "flat_rule_screen": {
+    "accuracy": 0.5,
+    "macro_precision": 0.6542514534883721,
+    "macro_recall": 0.6206896551724138,
+    "macro_f1": 0.4782299260234831,
+    "per_class": [
+      {
+        "label": "clean",
+        "precision": 0.59375,
+        "recall": 0.475,
+        "f1": 0.5277777777777778,
+        "support": 40,
+        "tp": 19,
+        "fp": 13,
+        "fn": 21
+      },
+      {
+        "label": "ambiguity",
+        "precision": 1.0,
+        "recall": 0.4827586206896552,
+        "f1": 0.6511627906976745,
+        "support": 29,
+        "tp": 14,
+        "fp": 0,
+        "fn": 15
+      },
+      {
+        "label": "non_testability",
+        "precision": 0.023255813953488372,
+        "recall": 1.0,
+        "f1": 0.04545454545454545,
+        "support": 1,
+        "tp": 1,
+        "fp": 42,
+        "fn": 0
+      },
+      {
+        "label": "incompleteness",
+        "precision": 1.0,
+        "recall": 0.525,
+        "f1": 0.6885245901639345,
+        "support": 40,
+        "tp": 21,
+        "fp": 0,
+        "fn": 19
+      }
+    ]
+  },
+  "explainable_precedence_screen": {
+    "accuracy": 0.8545454545454545,
+    "macro_precision": 0.9107142857142857,
+    "macro_recall": 0.8905172413793103,
+    "macro_f1": 0.8913996948893974,
+    "per_class": [
+      {
+        "label": "clean",
+        "precision": 0.75,
+        "recall": 0.975,
+        "f1": 0.8478260869565216,
+        "support": 40,
+        "tp": 39,
+        "fp": 13,
+        "fn": 1
+      },
+      {
+        "label": "ambiguity",
+        "precision": 0.8928571428571429,
+        "recall": 0.8620689655172413,
+        "f1": 0.8771929824561403,
+        "support": 29,
+        "tp": 25,
+        "fp": 3,
+        "fn": 4
+      },
+      {
+        "label": "non_testability",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "label": "incompleteness",
+        "precision": 1.0,
+        "recall": 0.725,
+        "f1": 0.8405797101449275,
+        "support": 40,
+        "tp": 29,
+        "fp": 0,
+        "fn": 11
+      }
+    ]
+  }
+}

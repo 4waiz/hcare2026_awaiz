@@ -1,0 +1,5 @@
+,clean,ambiguity,non_testability,incompleteness
+clean,19,0,21,0
+ambiguity,4,14,11,0
+non_testability,0,0,1,0
+incompleteness,9,0,10,21

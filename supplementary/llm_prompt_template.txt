@@ -1,0 +1,23 @@
+You are reviewing software requirements for quality defects.
+
+For each requirement, return JSON with exactly these fields:
+{
+  "requirement_id": "...",
+  "defect_present": "yes|no",
+  "primary_label": "clean|ambiguity|non_testability|incompleteness|conflict_candidate",
+  "rationale": "1-3 sentences explaining why",
+  "source_span": "exact short quote from the requirement supporting the decision",
+  "suggested_rewrite": "rewrite the requirement to make it clearer and more testable",
+  "confidence": 0.0
+}
+
+Rules:
+- Do not invent context that is not in the requirement.
+- If the requirement is vague, explain exactly which words are vague.
+- If the requirement is non-testable, explain what measurable condition is missing.
+- If the requirement is incomplete, explain which part is missing.
+- If the requirement looks clean, still provide a short rationale.
+- Keep the source_span short and copied from the requirement text.
+
+Requirement:
+[{requirement_id}] {requirement_text}
