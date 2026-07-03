@@ -1,29 +1,47 @@
-HCARE2026_Paper_Editable.docx
-HCARE2026_Paper_Source_IEEE.tex
-PACKAGE_MANIFEST.txt
-README_SUBMISSION_PACKAGE.md
-SUBMIT_THIS_HCARE2026.pdf
-_render_pdf/page-1.png
-_render_pdf/page-2.png
-_render_pdf/page-3.png
-easychair_submission_fields.txt
-figures/fig_macro_f1.pdf
-figures/fig_macro_f1.png
-figures/fig_reviewed_distribution.pdf
-figures/fig_reviewed_distribution.png
-scripts/run_evaluation.py
-submission_checklist.md
-supplementary/annotation_guide.md
-supplementary/conflict_candidates.csv
-supplementary/confusion_matrix_explainable_precedence_screen.csv
-supplementary/confusion_matrix_flat_rule_screen.csv
-supplementary/confusion_matrix_seed_heuristic.csv
-supplementary/document_inventory.csv
-supplementary/evaluation_results.json
-supplementary/evaluation_summary.csv
-supplementary/llm_prompt_template.txt
-supplementary/processing_report.md
-supplementary/requirements_extracted.csv
-supplementary/requirements_goldset_curated.csv
-supplementary/requirements_goldset_starter.csv
-supplementary/reviewed_goldset_with_predictions.csv
+PACKAGE MANIFEST
+Paper 15 - Keeping Engineers in the Loop: Explainable Requirement Defect
+Screening Across Software Requirements Specifications
+HCARE 2026 (co-located with IEEE RE 2026)
+Repository: https://github.com/4waiz/hcare2026_awaiz
+
+CAMERA-READY PAPER
+  SUBMIT_THIS_HCARE2026.docx                    editable camera-ready (IEEE two-column, letter)
+  HCARE2026_Final.pdf                           camera-ready PDF (5 pages, fonts embedded, no page numbers)
+
+DOCUMENTATION
+  README.md                                     package overview, how to reproduce and test
+  PACKAGE_MANIFEST.txt                          this file
+  supplementary/README.md                       data provenance and file-by-file guide
+
+FIGURES
+  figures/fig_macro_f1.png                      Fig. 2 (macro-F1 by condition)
+  figures/fig_macro_f1.pdf
+  figures/fig_reviewed_distribution.png         Fig. 1 (reviewed gold-set distribution)
+  figures/fig_reviewed_distribution.pdf
+
+SCRIPTS
+  scripts/run_evaluation.py                     recompute all reported metrics (stdlib only; --write regenerates result files)
+  scripts/generate_representative_samples.py    regenerate the 20 Table VI samples from the gold set
+
+SUPPLEMENTARY DATA
+  supplementary/requirements_extracted.csv      9,165 extracted statements (source pool, not manually evaluated)
+  supplementary/requirements_goldset_starter.csv  160-row machine-proposed starter set
+  supplementary/requirements_goldset_curated.csv  110-row curated gold set (pre-prediction)
+  supplementary/reviewed_goldset_with_predictions.csv  110 manually reviewed rows + all predictions (primary evaluation file)
+  supplementary/representative_20_samples.csv   the 20 cases shown in Table VI of the paper
+  supplementary/annotation_guide.md             label definitions used for adjudication
+  supplementary/llm_prompt_template.txt         prompt template for LLM-assisted screening
+  supplementary/document_inventory.csv          inventory of the 79 source documents
+  supplementary/processing_report.md            extraction pipeline report
+  supplementary/conflict_candidates.csv         220 candidate contradiction pairs (unverified)
+
+RESULTS
+  supplementary/evaluation_results.json         full metrics, Tables IV-V
+  supplementary/evaluation_summary.csv          per-condition summary
+  supplementary/confusion_matrix_seed_heuristic.csv
+  supplementary/confusion_matrix_flat_rule_screen.csv
+  supplementary/confusion_matrix_explainable_precedence_screen.csv
+
+TESTS (python -m pytest tests)
+  tests/test_artifact_integrity.py              files exist, gold set = 110 rows, 20 samples trace to gold set
+  tests/test_evaluation_outputs.py              evaluation reruns and reproduces the paper's numbers

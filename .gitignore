@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+# IEEE Word template (input only, not part of the artifact)
+conference-template-letter.docx
